@@ -1,6 +1,11 @@
 import random
+import os
 
-file1=open('Q2\library.txt','r',encoding='utf-8')
+here = os.path.dirname(os.path.abspath(__file__))
+
+file = os.path.join(here, 'library.txt')
+
+file1=open(file,'r',encoding='utf-8')
 top10=[]          # books at index 0 is most read book and so on...
 Library={}            # to store all the books and their corresponding count 
 
